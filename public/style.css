@@ -105,3 +105,49 @@ h2{margin:6px 0 12px;font-size:20px}
 .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--card2);border:1px solid var(--y);padding:10px 16px;border-radius:12px;z-index:30;font-weight:600;max-width:90%;text-align:center}
 .center{text-align:center}
 .ok{color:var(--g)}.bad{color:var(--r)}
+.zeus{display:block}
+.hero{position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#3a2008,#241a0d 60%);border:1px solid var(--line);border-radius:22px;padding:16px;margin-bottom:14px}
+.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:var(--grad);opacity:.14}
+.hero .zeus{width:92px;height:92px;flex:none;filter:drop-shadow(0 6px 14px #ff8a0066);animation:fl 3.2s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-5px) rotate(-2deg)}}
+.hero .grow{flex:1;min-width:0;position:relative;z-index:1}
+.hero b{font-size:18px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{height:8px;border-radius:99px;background:var(--card2);overflow:hidden;margin:8px 0 4px}
+.bar i{display:block;height:100%;border-radius:99px;background:var(--grad)}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.quick button{position:relative}
+.dot{position:absolute;top:-4px;right:-4px;width:12px;height:12px;border-radius:50%;background:var(--r);border:2px solid var(--bg)}
+.gift{position:relative;overflow:hidden;border:0!important;color:#fff;text-shadow:0 1px 4px #0007}
+.gift .pat{position:absolute;inset:-14px;font-size:13px;line-height:1.7;letter-spacing:7px;opacity:.2;transform:rotate(-14deg);word-break:break-all;pointer-events:none}
+.gift .ic{position:relative;font-size:32px;filter:drop-shadow(0 3px 6px #0008)}
+.gift small{position:relative;color:#fff!important;font-weight:700}
+.gift .no{position:absolute;top:5px;left:7px;font-size:9px;opacity:.85}
+.gift::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--tc,#fff)}
+.t-spark{--tc:#9aa4b2}.t-charge{--tc:#4aa3ff}.t-bolt{--tc:#b26bff}.t-cube{--tc:#ff5ac8}.t-gold{--tc:#ffc21a}.t-crown{--tc:#ff4d4d}
+.tabs{display:flex;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px;margin-bottom:12px}
+.tabs button{flex:1;background:none;padding:9px;border-radius:10px;color:var(--m);font-weight:600}
+.tabs button.on{background:var(--grad);color:#2a1700}
+.cf{position:fixed;inset:0;z-index:40;pointer-events:none}
+.wheelw{position:relative;width:280px;height:280px;margin:6px auto 18px}
+.wheelw::before{content:"";position:absolute;left:50%;top:-8px;margin-left:-12px;z-index:3;border:12px solid transparent;border-top:22px solid #fff;filter:drop-shadow(0 2px 4px #000a)}
+.wheel{position:absolute;inset:0;border-radius:50%;border:6px solid var(--y);box-shadow:0 0 30px #ff8a0055;transition:transform 4.6s cubic-bezier(.15,.7,.1,1)}
+.wheel span{position:absolute;left:50%;top:50%;font-weight:800;color:#2a1700;font-size:15px}
+.hub{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px;border-radius:50%;background:var(--bg);border:3px solid var(--y);display:flex;align-items:center;justify-content:center;z-index:2}
+.hub .zeus{width:38px;height:38px}
+input[type=range]{width:100%;accent-color:#ff9a00;margin:6px 0 10px}
+.track{position:relative;height:16px;border-radius:99px;background:linear-gradient(90deg,#3ddc84 var(--p,50%),#ff4d4d var(--p,50%));margin:18px 0 8px}
+.track i{position:absolute;top:-8px;width:4px;height:32px;margin-left:-2px;border-radius:3px;background:#fff;box-shadow:0 0 10px #fff;transition:left .9s cubic-bezier(.2,.8,.2,1)}
+.pc{display:block;width:100%;max-width:340px;margin:0 auto 12px;border-radius:18px;background:var(--bg2);border:1px solid var(--line)}
+.prog{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.prog:last-child{border:0}
+.prog .grow{flex:1;min-width:0}
+.prog .bar{margin:6px 0 0;height:6px}
+.empty{text-align:center;padding:26px 10px;color:var(--m)}
+.empty .zeus{width:84px;height:84px;margin:0 auto 8px;opacity:.9}
+.skel{height:64px;border-radius:14px;background:linear-gradient(90deg,var(--card),var(--card2),var(--card));background-size:200% 100%;animation:sk 1.2s infinite;margin-bottom:10px}
+@keyframes sk{to{background-position:-200% 0}}
+.refbox{display:flex;gap:8px}
+.refbox input{flex:1;min-width:0;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:11px;font-size:13px}
+.sel2{outline:3px solid var(--y);outline-offset:-3px}
+.brand .zeus{width:34px;height:34px}
+.zeus{object-fit:cover}img.zeus{border-radius:50%}
